@@ -1,0 +1,81 @@
+/* ปรับให้เต็มหน้าจอ */
+.login {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../../../public/background.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+}
+
+.card-login {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(40, 31, 31, 0.2);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+}
+
+/* ปรับขนาดฟอร์มให้ใหญ่ขึ้น */
+.card-login .ant-card-body {
+  padding: 50px;
+}
+
+/* ปรับขนาด input fields */
+.login .ant-input,
+.login .ant-input-password {
+  padding: 15px;
+  font-size: 16px;
+  height: 48px;
+}
+
+/* ปรับขนาดปุ่ม */
+.login-form-button {
+  height: 50px;
+  font-size: 18px;
+}
+
+/* ปรับขนาด label */
+.login .ant-form-item-label > label {
+  font-size: 16px;
+}
+
+/* ปรับรูป logo */
+.images-logo {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+/* ปรับ responsive design */
+@media (max-width: 768px) {
+  .card-login .ant-card-body {
+    padding: 30px;
+  }
+  
+  .images-logo {
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-login .ant-card-body {
+    padding: 20px;
+  }
+  
+  .login .ant-input,
+  .login .ant-input-password {
+    padding: 12px;
+    height: 44px;
+  }
+  
+  .login-form-button {
+    height: 46px;
+    font-size: 16px;
+  }
+}
